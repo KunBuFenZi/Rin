@@ -16,7 +16,18 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
-    
+    <script>
+        (function () {
+            window.counterscale = {
+                q: [["set", "siteId", "www.cpu.red"], ["trackPageview"]],
+            };
+        })();
+    </script>
+    <script
+        id="counterscale-script"
+        src="https://analyse.cpu.red/tracker.js"
+        defer
+    ></script>
     <script>
         (function () {
             window.counterscale = {
